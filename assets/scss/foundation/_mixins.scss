@@ -1,0 +1,91 @@
+@mixin flexDirection($flow, $alignment, $justify) {
+  display: flex;
+  @if $alignment {
+    align-items: $alignment;
+  } @else {
+    align-items: center;
+  }
+  @if $justify {
+    justify-content: $justify;
+  } @else {
+    justify-content: center;
+  }
+  @if $flow == "column" {
+    flex-flow: $flow;
+  } @else if $flow == "row" {
+    flex-flow: $flow;
+  } @else {
+    flex-flow: row-reverse;
+  }
+}
+@mixin img {
+  height: auto;
+  max-width: 100%;
+}
+@mixin paragraph {
+  font-size: 16px;
+  color: $c7070;
+  line-height: 26px;
+}
+
+@mixin radius($height) {
+  height: $height;
+  width: $height;
+  border-radius: 50%;
+}
+@mixin transition($timing) {
+  transition: all $timing linear;
+}
+
+$litle-limit: 575px;
+$small-limit: 767px;
+$medium-limit: 991px;
+$large-limit: 1199px;
+@mixin respond-to($media) {
+  @if $media == allsmall {
+    @media only screen and (max-width: $small-limit) {
+      @content;
+    }
+  } @else if $media == little {
+    @media only screen and (max-width: $litle-limit) {
+      @content;
+    }
+  } @else if $media == littletosmall {
+    @media only screen and (min-width: $litle-limit + 1) and (max-width: $small-limit) {
+      @content;
+    }
+  } @else if $media == mdm {
+    @media only screen and (min-width: $small-limit + 1) and (max-width: $medium-limit) {
+      @content;
+    }
+  } @else if $media == larage {
+    @media only screen and (min-width: $medium-limit + 1) and (max-width: $large-limit) {
+      @content;
+    }
+  }
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}

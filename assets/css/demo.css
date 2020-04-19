@@ -1,0 +1,6 @@
+body {
+  font-family: "Source Sans Pro", sans-serif; }
+
+.aae-post-list__image {
+  max-width: 50%;
+  flex: 0 0 50%; }

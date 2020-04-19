@@ -1,0 +1,87 @@
+@import "foundation/variables";
+@import "foundation/mixins";
+$metalist: date, like, comments;
+.aae-post-list {
+    .aae-post-list__wrapper {
+        .aae-post-list__container {
+            @include flexDirection(row, center, space-between);
+            box-shadow: 16px 75px 113px -55px rgba(0, 83, 248, 0.26);
+            background: $cf8f9;
+            .aae-post-list__content {
+                padding: 60px 30px 60px 60px;
+                a {
+                    text-decoration: none;
+                    .aae-post-list__content_title {
+                        font-weight: $bold;
+                        font-size: 36px;
+                        color: $c171f;
+                    }
+                }
+                .aae-post-list__meta {
+                    @include flexDirection(row, center, space-between);
+                    background: $white;
+                    padding: 4px;
+                    padding-right: 15px;
+                    box-shadow: 0px 20px 40px rgba(0, 85, 255, 0.1);
+                    margin: 25px 0 25px 0;
+                    border-radius: 50px;
+                    & > span:not(:last-child) {
+                        margin-right: 15px;
+                    }
+                    &_author {
+                        @include flexDirection(row, center, center);
+                        &_avatar {
+                            @include radius(45px);
+                            padding: 5px;
+                            margin-right: 10px;
+                        }
+                        &_meta {
+                            color: $c4381;
+                            font-size: 14px;
+                        }
+                    }
+                    @each $metalist in $metalist {
+                        .aae-post-list__meta_#{$metalist} {
+                            font-size: 14px;
+                            color: $c9ea2;
+                            @include flexDirection(row, center, center);
+                            span {
+                                color: $c4381;
+                                font-size: 16px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                p {
+                    @include paragraph;
+                    margin-bottom: 0;
+                }
+                .aae-read-more {
+                    margin-top: 25px;
+                    display: inline-flex;
+                    color: $c4381;
+                    font-size: 16px;
+                    align-items: center;
+                    span {
+                        @include radius(5px);
+                        background: $c4381;
+                        margin-right: 3px;
+                        animation: zoomIn 1s linear infinite;
+                        &:first-child {
+                            margin-left: 10px;
+                        }
+                        &:nth-child(2) {
+                            animation-delay: 0.1s;
+                        }
+                        &:nth-child(3) {
+                            animation-delay: 0.2s;
+                        }
+                    }
+                }
+            }
+            .aae-post-list__image {
+            }
+        }
+    }
+}

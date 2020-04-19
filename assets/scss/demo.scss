@@ -1,0 +1,13 @@
+@import "foundation/variables";
+
+body {
+    font-family: $source;
+}
+.aae-post-list {
+    &__image {
+        max-width: 50%;
+        flex: 0 0 50%;
+        img {
+        }
+    }
+}
