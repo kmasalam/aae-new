@@ -1,0 +1,204 @@
+@import "foundation/variables";
+@import "foundation/mixins";
+
+$metalist: time, author;
+@mixin commonHide {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transform: translateY(5px);
+}
+@mixin commonShow {
+    visibility: visible;
+    opacity: 1;
+    height: initial;
+    transform: translateY(0px);
+}
+.aae-post-grid {
+    &__wrapper {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        .aae-post-grid__container {
+            flex: 0 0 calc(33.33% - 30px);
+            max-width: calc(33.33% - 30px);
+            width: 100%;
+            position: relative;
+            &_inner {
+                .aae-post-grid__image {
+                    img {
+                    }
+                }
+                .aae-post-grid__body {
+                    a {
+                        .aae-post-grid__title {
+                            font-size: 24px;
+                            color: $c2f2f;
+                            text-transform: uppercase;
+                            margin: 15px 0 15px 0;
+                        }
+                    }
+                    .aae-post-grid__meta {
+                        margin-bottom: 10px;
+                        @each $metalist in $metalist {
+                            .aae-post-grid__meta_#{$metalist} {
+                                color: $c8787;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .aae-post-grid__content {
+                        p {
+                            font-size: 14px;
+                            color: $c7272;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .aae-post-grid__read-more {
+                        font-size: 14px;
+                        color: $c2f2f;
+                        text-decoration: underline;
+                        margin-top: 20px;
+                        display: inline-flex;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    &.aae-is-thumbnail-top {
+    }
+    &.aae-grid-gap-medium {
+        .aae-post-grid__container {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    &.aae-post-grid-is-filterable {
+        .aae-filterable {
+            margin-bottom: 30px;
+            @include flexDirection(row, center, center);
+            li {
+                list-style: none;
+                cursor: pointer;
+                font-size: 15px;
+                letter-spacing: 1px;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    &.aae-is-thumbnail-cover {
+        &.aae-is-content-hoverable {
+            .aae-post-grid__wrapper {
+                .aae-post-grid__container {
+                    &_inner {
+                        height: 360px;
+                        position: relative;
+                        overflow: hidden;
+                        box-shadow: 0px 0px 40px rgba($c5625, 0.1);
+                        border-radius: 12px;
+                        .aae-post-grid__image {
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                            border-radius: 12px;
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                                border-radius: 12px;
+                            }
+                        }
+                        .aae-post-grid__body {
+                            position: absolute;
+                            bottom: 0;
+                            background: rgba($white, 0.9);
+                            padding: 30px 30px 35px 30px;
+                            width: 100%;
+                            @include transition(0.4s, linear);
+                            height: initial;
+                            .aae-post-grid__meta {
+                                //margin-bottom: 10px;
+                                margin-bottom: 0px;
+                                @include commonHide;
+                                @include transition(0.4s, linear);
+                                > span {
+                                    position: relative;
+                                    &:not(:last-child) {
+                                        &::after {
+                                            width: 1px;
+                                            background: $cacac;
+                                            height: 80%;
+                                            content: "";
+                                            position: absolute;
+                                            right: -5px;
+                                            bottom: 0;
+                                        }
+                                    }
+                                }
+                                @each $metalist in $metalist {
+                                    .aae-post-grid__meta_#{$metalist} {
+                                        @include transition(0.3s, linear);
+                                        color: $cacac;
+                                        font-size: 14px;
+                                        margin-right: 15px;
+                                        position: relative;
+                                    }
+                                }
+                            }
+                            a {
+                                .aae-post-grid__title {
+                                    @include transition(0.3s, linear);
+                                    color: $c2222;
+                                    font-weight: 700;
+                                    text-transform: capitalize;
+                                    font-size: 22px;
+                                    margin: 0 0 10px 0;
+                                }
+                            }
+                            .aae-post-grid__content {
+                                margin-bottom: 0px;
+                                @include commonHide;
+                                @include transition(0.4s, linear);
+                                transition-delay: 0.1s;
+                                p {
+                                    color: $c6666;
+                                    font-size: 14px;
+                                }
+                            }
+                            .aae-post-grid__read-more {
+                                //margin-top: 15px;
+                                display: block;
+                                margin: 0px;
+                                @include commonHide;
+                                @include transition(0.4s, linear);
+                                transition-delay: 0.15s;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .aae-post-grid__body {
+                            .aae-post-grid__meta {
+                                @include commonShow;
+                                margin-bottom: 10px;
+                            }
+                            .aae-post-grid__content {
+                                @include commonShow;
+                            }
+                            .aae-post-grid__read-more {
+                                @include commonShow;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

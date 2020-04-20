@@ -7,6 +7,12 @@
   .aae-widget img {
     height: auto;
     max-width: 100%; }
+  .aae-widget a {
+    text-decoration: none; }
+  .aae-widget *,
+  .aae-widget *::before,
+  .aae-widget *::after {
+    box-sizing: border-box; }
 
 @-webkit-keyframes zoomIn {
   from {
@@ -47,6 +53,21 @@
     transform: scale3d(0.3, 0.3, 0.3); }
   50% {
     opacity: 1; } }
+
+.aae-dotted-read-more span {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: #5625cc;
+  margin-right: 3px;
+  animation: zoomIn 1s linear infinite;
+  display: inline-block; }
+  .aae-dotted-read-more span:first-child {
+    margin-left: 10px; }
+  .aae-dotted-read-more span:nth-child(2) {
+    animation-delay: 0.1s; }
+  .aae-dotted-read-more span:nth-child(3) {
+    animation-delay: 0.2s; }
 
 /*-----------------------------------
 -----------------------------------*/

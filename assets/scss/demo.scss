@@ -14,6 +14,9 @@ body {
         }
     }
 }
+.aae-overlay {
+    position: absolute;
+}
 .mt-30 {
     margin-top: 30px;
 }
@@ -26,3 +29,36 @@ body {
 .pt-30 {
     padding-bottom: 30px;
 }
+$metalist: time, author;
+.aae-post-grid {
+    &.aae-is-thumbnail-cover {
+        &.aae-is-content-hoverable {
+            .aae-post-grid__wrapper {
+                .aae-post-grid__container {
+                    &_inner {
+                        .aae-post-grid__body {
+                            .aae-post-grid__meta {
+                                &:hover {
+                                    @each $metalist in $metalist {
+                                        .aae-post-grid__meta_#{$metalist} {
+                                            color: $c5625;
+                                        }
+                                    }
+                                }
+                            }
+                            a {
+                                .aae-post-grid__title {
+                                    &:hover {
+                                        color: $c5625;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*------------------------------------
+-----------------------------------*/

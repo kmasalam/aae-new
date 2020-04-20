@@ -33,8 +33,12 @@
   width: $height;
   border-radius: 50%;
 }
-@mixin transition($timing) {
-  transition: all $timing linear;
+@mixin transition($timing, $effect) {
+  @if $effect {
+    transition: all $timing $effect;
+  } @else {
+    transition: all $timing linear;
+  }
 }
 
 $litle-limit: 575px;
