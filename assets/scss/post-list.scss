@@ -8,7 +8,7 @@ $metalist: date, like, comments;
             box-shadow: 16px 75px 113px -55px rgba(0, 83, 248, 0.26);
             background: $cf8f9;
             .aae-post-list__content {
-                padding: 60px 30px 60px 60px;
+                padding: 60px 30px 60px 50px;
                 a {
                     text-decoration: none;
                     .aae-post-list__content_title {
@@ -32,7 +32,6 @@ $metalist: date, like, comments;
                         @include flexDirection(row, center, center);
                         &_avatar {
                             @include radius(45px);
-                            padding: 5px;
                             margin-right: 10px;
                         }
                         &_meta {
@@ -81,6 +80,57 @@ $metalist: date, like, comments;
                 }
             }
             .aae-post-list__image {
+            }
+        }
+    }
+    &.aae-is-thumbnail-left {
+        .aae-post-list__wrapper {
+            .aae-post-list__container {
+                @include flexDirection(row-reverse, center, space-between);
+            }
+        }
+    }
+    &.aae-is-post-dark {
+        .aae-post-list__wrapper {
+            .aae-post-list__container {
+                background: $c3f3f;
+                .aae-post-list__content {
+                    a {
+                        .aae-post-list__content_title {
+                            color: $white;
+                        }
+                    }
+                    .aae-post-list__meta {
+                        border-radius: 0;
+                        background: rgba($white, 0.05);
+                        box-shadow: none;
+                        &_author {
+                            &_avatar {
+                                border-radius: 0;
+                            }
+                            &_meta {
+                                color: $cdf4c;
+                            }
+                        }
+                        @each $metalist in $metalist {
+                            .aae-post-list__meta_#{$metalist} {
+                                color: $c9191;
+                                span {
+                                    color: $cdf4c;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        color: $cc8c8;
+                    }
+                    .aae-read-more {
+                        color: $cdf4c;
+                        span {
+                            background: $cdf4c;
+                        }
+                    }
+                }
             }
         }
     }

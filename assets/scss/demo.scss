@@ -5,9 +5,24 @@ body {
 }
 .aae-post-list {
     &__image {
-        max-width: 50%;
-        flex: 0 0 50%;
+        max-width: 533px;
+        flex: 0 0 533px;
+        height: 420px;
         img {
+            width: 100%;
+            height: 100%;
         }
     }
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pt-30 {
+    padding-bottom: 30px;
 }
