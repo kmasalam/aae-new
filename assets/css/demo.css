@@ -33,5 +33,29 @@ body {
 .aae-post-grid.aae-is-thumbnail-cover.aae-is-content-hoverable .aae-post-grid__wrapper .aae-post-grid__container_inner .aae-post-grid__body a .aae-post-grid__title:hover {
   color: #5625cc; }
 
+.aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container {
+  box-shadow: 0 0 30px rgba(98, 144, 121, 0.1); }
+  .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__image {
+    padding-top: 30px;
+    padding-left: 30px;
+    transition: all 0.3s linear; }
+    .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__image img {
+      border-top-left-radius: 20px;
+      vertical-align: bottom; }
+  .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__title {
+    font-size: 22px;
+    color: #99566e; }
+  .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__designation {
+    font-size: 16px;
+    color: #acacac; }
+  .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon li a {
+    font-size: 16px;
+    color: #ffffff; }
+    .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon li a:hover {
+      color: #99566e; }
+  .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container:hover .aae-team-member__image {
+    padding-top: 10px;
+    padding-left: 10px; }
+
 /*------------------------------------
 -----------------------------------*/

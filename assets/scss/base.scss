@@ -51,6 +51,174 @@
     }
 }
 
+@mixin aae_socialhide {
+    visibility: hidden;
+    opacity: 0;
+}
+.aae-team-member {
+    .aae-team-member__wrapper {
+        .aae-team-member__container {
+            @include transition(0.3s, linear);
+            position: relative;
+            .aae-team-member__image {
+                padding-top: 30px;
+                padding-left: 30px;
+                @include transition(0.3s, linear);
+                img {
+                    vertical-align: bottom;
+                }
+            }
+            .aae-team-member__body {
+                padding: 25px;
+                text-align: center;
+                .aae-team-member__title {
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                    @include transition(0.3s, linear);
+                }
+                .aae-team-member__designation {
+                    font-size: 16px;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    @include transition(0.3s, linear);
+                }
+                .aae-team-member__social_icon {
+                    @include flexDirection(column, center, center);
+                    list-style-type: none;
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 15px;
+                        }
+                        a {
+                            font-size: 16px;
+                            @include transition(0.3s, linear);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.aae-is-member-image-right {
+        .aae-team-member__wrapper {
+            .aae-team-member__container {
+                box-shadow: 0 0 30px rgba($c6290, 0.1);
+                .aae-team-member__image {
+                    padding-top: 30px;
+                    padding-left: 30px;
+                    @include transition(0.3s, linear);
+                    img {
+                        border-top-left-radius: 20px;
+                        vertical-align: bottom;
+                    }
+                }
+                .aae-team-member__body {
+                    padding: 25px;
+                    text-align: center;
+                    .aae-team-member__title {
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                    }
+                    .aae-team-member__designation {
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                    }
+                    .aae-team-member__social_icon {
+                        position: absolute;
+                        right: 15px;
+                        margin: 0;
+                        padding: 0;
+                        top: 70px;
+                        @include flexDirection(column, center, center);
+                        list-style-type: none;
+                        li {
+                            &:not(:last-child) {
+                                margin-bottom: 15px;
+                            }
+                            a {
+                                @include transition(0.3s, linear);
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .aae-team-member__image {
+                        padding-top: 10px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &.aae-is-member-image-top {
+        &.aae-is-member-image-circle {
+            background: $cf8f9;
+            .aae-team-member__wrapper {
+                .aae-team-member__container {
+                    overflow: hidden;
+                    position: relative;
+                    .aae-team-member__image {
+                        img {
+                            @include radius(180px);
+                            object-fit: cover;
+                        }
+                    }
+                    .aae-team-member__body {
+                        .aae-team-member__social_icon {
+                            position: absolute;
+                            @include flexDirection(row, center, center);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            margin-bottom: 0;
+                            padding: 0;
+                            @include transition(0.4s, ease-in);
+                            bottom: 0px;
+                            @include aae_socialhide;
+
+                            li {
+                                margin: 0;
+                                &:not(:last-child) {
+                                    margin-right: 10px;
+                                }
+                                a {
+                                    @include radius(45px);
+                                    display: inline-flex;
+                                    background: #efefef;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #a7a7a7;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        background: $white;
+                        box-shadow: 0 30px 60px rgba($c171f, 0.1);
+                        .aae-team-member__social_icon {
+                            bottom: 45px;
+                            visibility: visible;
+                            opacity: 1;
+                            li {
+                                a {
+                                    &:hover {
+                                        color: $c171f;
+                                    }
+                                }
+                            }
+                        }
+                        .aae-team-member__body {
+                            .aae-team-member__title {
+                                @include aae_socialhide;
+                            }
+                            .aae-team-member__designation {
+                                @include aae_socialhide;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 /*-----------------------------------
 -----------------------------------*/
 /*-----------------------------------
