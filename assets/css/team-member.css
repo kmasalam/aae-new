@@ -1,0 +1,125 @@
+.aae-team-member .aae-team-member__wrapper .aae-team-member__container {
+  transition: all 0.3s linear;
+  position: relative; }
+  .aae-team-member .aae-team-member__wrapper .aae-team-member__container .aae-team-member__image {
+    padding-top: 30px;
+    padding-left: 30px;
+    transition: all 0.3s linear; }
+    .aae-team-member .aae-team-member__wrapper .aae-team-member__container .aae-team-member__image img {
+      vertical-align: bottom; }
+  .aae-team-member .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body {
+    padding: 25px;
+    text-align: center; }
+    .aae-team-member .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__title {
+      font-size: 22px;
+      margin-bottom: 10px;
+      transition: all 0.3s linear; }
+    .aae-team-member .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__designation {
+      font-size: 16px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      transition: all 0.3s linear; }
+    .aae-team-member .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      list-style-type: none; }
+      .aae-team-member .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon li:not(:last-child) {
+        margin-bottom: 15px; }
+      .aae-team-member .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon li a {
+        font-size: 16px;
+        transition: all 0.3s linear; }
+
+.aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container {
+  box-shadow: 0 0 30px rgba(98, 144, 121, 0.1); }
+  .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__image {
+    padding-top: 30px;
+    padding-left: 30px;
+    transition: all 0.3s linear; }
+    .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__image img {
+      border-top-left-radius: 20px;
+      vertical-align: bottom; }
+  .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body {
+    padding: 25px;
+    text-align: center; }
+    .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__title {
+      font-size: 22px;
+      margin-bottom: 10px; }
+    .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__designation {
+      padding-bottom: 0;
+      margin-bottom: 0; }
+    .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon {
+      position: absolute;
+      right: 15px;
+      margin: 0;
+      padding: 0;
+      top: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      list-style-type: none; }
+      .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon li:not(:last-child) {
+        margin-bottom: 15px; }
+      .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon li a {
+        transition: all 0.3s linear; }
+  .aae-team-member.aae-is-member-image-right .aae-team-member__wrapper .aae-team-member__container:hover .aae-team-member__image {
+    padding-top: 10px;
+    padding-left: 10px; }
+
+.aae-team-member.aae-is-member-image-top.aae-is-member-image-circle {
+  background: #f8f9fd; }
+  .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container {
+    overflow: hidden;
+    position: relative; }
+    .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container .aae-team-member__image img {
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+      object-fit: cover; }
+    .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__title {
+      text-transform: uppercase;
+      font-weight: 400; }
+    .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 0;
+      padding: 0;
+      transition: all 0.4s ease-in;
+      bottom: 0px;
+      visibility: hidden;
+      opacity: 0; }
+      .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon li {
+        margin: 0; }
+        .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon li:not(:last-child) {
+          margin-right: 10px; }
+        .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container .aae-team-member__body .aae-team-member__social_icon li a {
+          height: 45px;
+          width: 45px;
+          border-radius: 50%;
+          display: inline-flex;
+          background: #efefef;
+          align-items: center;
+          justify-content: center;
+          color: #a7a7a7; }
+    .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container:hover {
+      background: #ffffff;
+      box-shadow: 0 30px 60px rgba(23, 31, 62, 0.1); }
+      .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container:hover .aae-team-member__social_icon {
+        bottom: 45px;
+        visibility: visible;
+        opacity: 1; }
+        .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container:hover .aae-team-member__social_icon li a:hover {
+          color: #171f3e; }
+      .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container:hover .aae-team-member__body .aae-team-member__title {
+        visibility: hidden;
+        opacity: 0; }
+      .aae-team-member.aae-is-member-image-top.aae-is-member-image-circle .aae-team-member__wrapper .aae-team-member__container:hover .aae-team-member__body .aae-team-member__designation {
+        visibility: hidden;
+        opacity: 0; }

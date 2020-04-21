@@ -1,0 +1,124 @@
+@import "foundation/variables";
+@import "foundation/mixins";
+
+.aae-testimonial {
+    .aae-testimonial__wrapper {
+        .aae-testimonial__container {
+            @include flexDirection(row, center, center);
+            background: $c4381;
+            padding: 60px 40px 60px 40px;
+            border-radius: 26px;
+            .aae-testimonial__image {
+                @include radius(150px);
+                overflow: hidden;
+                img {
+                    @include radius(100%);
+                    object-fit: cover;
+                }
+            }
+            .aae-testimonial__body {
+                flex: 1;
+                padding-right: 40px;
+                .aae-testimonial__content {
+                    p {
+                        font-size: 20px;
+                        color: $white;
+                        margin-bottom: 0;
+                        font-weight: 300;
+                        font-style: italic;
+                    }
+                }
+                .aae-testimonial__meta {
+                    @include flexDirection(column, flex-start, center);
+                    padding-top: 20px;
+                    .aae-testimonial__meta_name {
+                        font-size: 24px;
+                        color: $white;
+                        font-weight: $semibold;
+                    }
+                    .aae-testimonial__meta_desc {
+                        color: $cffdc;
+                    }
+                }
+            }
+        }
+    }
+    &.aae-is-thumbnail-left {
+        .aae-testimonial__container {
+            flex-flow: row-reverse;
+            .aae-testimonial__body {
+                padding-right: 0;
+                padding-left: 40px;
+            }
+        }
+    }
+    &.aae-is-image-bottom {
+        .aae-testimonial__container {
+            flex-flow: column;
+        }
+    }
+    &.aae-alignment-center {
+        .aae-testimonial__container {
+            .aae-testimonial__body {
+                padding-left: 0;
+                padding-right: 0;
+                .aae-testimonial__content {
+                    text-align: center;
+                }
+                .aae-testimonial__meta {
+                    align-items: center;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+    &.aae-is-image-top {
+        .aae-testimonial__container {
+            flex-flow: column-reverse;
+            .aae-testimonial__image {
+                img {
+                }
+            }
+            .aae-testimonial__body {
+                flex: 1;
+                padding-right: 0px;
+                .aae-testimonial__content {
+                    padding-top: 20px;
+                }
+                .aae-testimonial__meta {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+    &.aae-testimonial-has-shadow {
+        .aae-testimonial__container {
+            box-shadow: 0px 10px 30px rgba($c171f, 0.3);
+            .aae-testimonial__image {
+                padding: 10px;
+                box-shadow: 0px 0px 10px rgba(23, 31, 62, 0.3);
+            }
+        }
+    }
+    &.aae-has-no-bg {
+        .aae-testimonial__container {
+            background: $white;
+
+            .aae-testimonial__body {
+                .aae-testimonial__content {
+                    p {
+                        color: $c9ea2;
+                    }
+                }
+                .aae-testimonial__meta {
+                    .aae-testimonial__meta_name {
+                        color: $c171f;
+                    }
+                    .aae-testimonial__meta_desc {
+                        color: $c171f;
+                    }
+                }
+            }
+        }
+    }
+}
