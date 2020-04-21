@@ -5,7 +5,6 @@
     .aae-testimonial__wrapper {
         .aae-testimonial__container {
             @include flexDirection(row, center, center);
-            background: $c4381;
             padding: 60px 40px 60px 40px;
             border-radius: 26px;
             .aae-testimonial__image {
@@ -21,8 +20,6 @@
                 padding-right: 40px;
                 .aae-testimonial__content {
                     p {
-                        font-size: 20px;
-                        color: $white;
                         margin-bottom: 0;
                         font-weight: 300;
                         font-style: italic;
@@ -32,12 +29,7 @@
                     @include flexDirection(column, flex-start, center);
                     padding-top: 20px;
                     .aae-testimonial__meta_name {
-                        font-size: 24px;
-                        color: $white;
                         font-weight: $semibold;
-                    }
-                    .aae-testimonial__meta_desc {
-                        color: $cffdc;
                     }
                 }
             }
@@ -76,8 +68,6 @@
         .aae-testimonial__container {
             flex-flow: column-reverse;
             .aae-testimonial__image {
-                img {
-                }
             }
             .aae-testimonial__body {
                 flex: 1;
@@ -97,27 +87,6 @@
             .aae-testimonial__image {
                 padding: 10px;
                 box-shadow: 0px 0px 10px rgba(23, 31, 62, 0.3);
-            }
-        }
-    }
-    &.aae-has-no-bg {
-        .aae-testimonial__container {
-            background: $white;
-
-            .aae-testimonial__body {
-                .aae-testimonial__content {
-                    p {
-                        color: $c9ea2;
-                    }
-                }
-                .aae-testimonial__meta {
-                    .aae-testimonial__meta_name {
-                        color: $c171f;
-                    }
-                    .aae-testimonial__meta_desc {
-                        color: $c171f;
-                    }
-                }
             }
         }
     }
