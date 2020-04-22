@@ -102,3 +102,49 @@ Testimonial
     color: #171f3e; }
   .aae-testimonial.aae-has-no-bg .aae-testimonial__container .aae-testimonial__body .aae-testimonial__meta .aae-testimonial__meta_desc {
     color: #171f3e; }
+
+/*---------------------------------------
+  // Progressbar
+---------------------------------------*/
+.aae-progressbar.aae-is-progressbar-line {
+  margin: 30px 0 30px 0; }
+  .aae-progressbar.aae-is-progressbar-line .aae-progressbar__wrapper .aae-progressbar__container {
+    background: #f8f9fd; }
+    .aae-progressbar.aae-is-progressbar-line .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__title, .aae-progressbar.aae-is-progressbar-line .aae-progressbar.aae-is-progressbar-capsuled .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__parcent, .aae-progressbar.aae-is-progressbar-capsuled .aae-progressbar.aae-is-progressbar-line .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__parcent {
+      top: -28px;
+      left: 0; }
+    .aae-progressbar.aae-is-progressbar-line .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__line {
+      background: #3f3f3f; }
+
+.aae-progressbar.aae-is-progressbar-capsuled {
+  background: #e8f0f4;
+  border-radius: 10px; }
+  .aae-progressbar.aae-is-progressbar-capsuled .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__title, .aae-progressbar.aae-is-progressbar-capsuled .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__parcent {
+    font-weight: 600;
+    font-family: "Source Sans Pro", sans-serif; }
+  .aae-progressbar.aae-is-progressbar-capsuled .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__parcent {
+    color: #ffffff;
+    font-weight: 600; }
+  .aae-progressbar.aae-is-progressbar-capsuled .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__line {
+    background: #ffcf4a;
+    background: -moz-linear-gradient(top, #ffcf4a 0%, #ff3a6d 86%);
+    background: -webkit-linear-gradient(top, #ffcf4a 0%, #ff3a6d 86%);
+    background: linear-gradient(to bottom, #ffcf4a 0%, #ff3a6d 86%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf4a', endColorstr='#ff3a6d',GradientType=0 ); }
+
+.aae-progressbar.aae-has-progressbar-shadow .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__line {
+  box-shadow: 4px 0px 4px rgba(23, 31, 62, 0.25); }
+
+.aae-progressbar.aae-is-progressbar-circle {
+  margin-bottom: 30px; }
+  .aae-progressbar.aae-is-progressbar-circle .aae-progressbar__wrapper .aae-progressbar__container {
+    border: 8px solid #f8f9fd; }
+    .aae-progressbar.aae-is-progressbar-circle .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__title, .aae-progressbar.aae-is-progressbar-circle .aae-progressbar.aae-is-progressbar-capsuled .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__parcent, .aae-progressbar.aae-is-progressbar-capsuled .aae-progressbar.aae-is-progressbar-circle .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__parcent {
+      font-size: 18px;
+      font-family: "Source Sans Pro", sans-serif; }
+    .aae-progressbar.aae-is-progressbar-circle .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar__parcent {
+      font-size: 20px;
+      color: #9ea2b1;
+      font-family: "Source Sans Pro", sans-serif; }
+    .aae-progressbar.aae-is-progressbar-circle .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar-circle {
+      stroke: #171f3e; }

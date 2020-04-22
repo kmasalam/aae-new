@@ -93,3 +93,9 @@ $large-limit: 1199px;
   -o-animation: #{$str};
   animation: #{$str};
 }
+
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

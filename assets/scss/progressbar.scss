@@ -1,0 +1,109 @@
+@import "foundation/variables";
+@import "foundation/mixins";
+.aae-progressbar {
+    &.aae-is-progressbar-line {
+        margin: 30px 0 30px 0;
+        .aae-progressbar__wrapper {
+            .aae-progressbar__container {
+                width: 100%;
+                height: 10px;
+                background: $cf8f9;
+                position: relative;
+                .aae-progressbar__title {
+                    position: absolute;
+                    top: -28px;
+                    left: 0;
+                }
+                .aae-progressbar__parcent {
+                    z-index: 50;
+                    @extend .aae-progressbar__title;
+                }
+                .aae-progressbar__line {
+                    position: absolute;
+                    height: 100%;
+                    width: 0;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &.aae-is-progressbar-capsuled {
+        background: #e8f0f4;
+        border-radius: 10px;
+        .aae-progressbar__wrapper {
+            .aae-progressbar__container {
+                height: 20px;
+                position: relative;
+                border-radius: 10px;
+                .aae-progressbar__title {
+                    position: absolute;
+                    top: -28px;
+                    left: 0;
+                    font-weight: $semibold;
+                }
+                .aae-progressbar__parcent {
+                    @extend .aae-progressbar__title;
+                    top: -3px;
+                    margin-left: -45px;
+                    font-weight: $semibold;
+                }
+                .aae-progressbar__line {
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    &.aae-has-progressbar-shadow {
+        .aae-progressbar__wrapper {
+            .aae-progressbar__container {
+                .aae-progressbar__line {
+                    box-shadow: 4px 0px 4px rgba($c171f, 0.25);
+                }
+            }
+        }
+    }
+    &.aae-is-progressbar-circle {
+        margin-bottom: 30px;
+        .aae-progressbar__wrapper {
+            .aae-progressbar__container {
+                height: 155px;
+                width: 155px;
+                border: 8px solid $cf8f9;
+                border-radius: 50%;
+                position: relative;
+                .aae-progressbar__title {
+                    position: absolute;
+                    bottom: -40px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-weight: $semibold;
+                }
+                .aae-progressbar__parcent {
+                    position: absolute;
+                    @include center;
+                    font-weight: $semibold;
+                }
+                svg {
+                    transform: rotate(-90deg);
+                    height: 173px;
+                    overflow: hidden;
+                    vertical-align: middle;
+                    position: absolute;
+                    right: -17px;
+                    top: -17px;
+                }
+                .aae-progressbar-circle {
+                    fill: none;
+                    stroke: $c171f;
+                    stroke-width: 9px;
+                    stroke-linecap: round;
+                    stroke-dasharray: 0;
+                    stroke-dashoffset: 0;
+                    position: relative;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}

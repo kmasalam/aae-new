@@ -189,3 +189,78 @@ Testimonial
     }
   }
 }
+/*---------------------------------------
+  // Progressbar
+---------------------------------------*/
+.aae-progressbar {
+  &.aae-is-progressbar-line {
+    margin: 30px 0 30px 0;
+    .aae-progressbar__wrapper {
+      .aae-progressbar__container {
+        background: $cf8f9;
+        .aae-progressbar__title {
+          top: -28px;
+          left: 0;
+        }
+        .aae-progressbar__line {
+          background: $c3f3f;
+        }
+      }
+    }
+  }
+  &.aae-is-progressbar-capsuled {
+    background: #e8f0f4;
+    border-radius: 10px;
+    .aae-progressbar__wrapper {
+      .aae-progressbar__container {
+        .aae-progressbar__title {
+          font-weight: $semibold;
+          font-family: $source;
+        }
+        .aae-progressbar__parcent {
+          @extend .aae-progressbar__title;
+          color: $white;
+          font-weight: $semibold;
+        }
+        .aae-progressbar__line {
+          background: #ffcf4a;
+          background: -moz-linear-gradient(top, #ffcf4a 0%, #ff3a6d 86%);
+          background: -webkit-linear-gradient(top, #ffcf4a 0%, #ff3a6d 86%);
+          background: linear-gradient(to bottom, #ffcf4a 0%, #ff3a6d 86%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf4a', endColorstr='#ff3a6d',GradientType=0 );
+        }
+      }
+    }
+  }
+  &.aae-has-progressbar-shadow {
+    .aae-progressbar__wrapper {
+      .aae-progressbar__container {
+        .aae-progressbar__line {
+          box-shadow: 4px 0px 4px rgba($c171f, 0.25);
+        }
+      }
+    }
+  }
+  &.aae-is-progressbar-circle {
+    margin-bottom: 30px;
+    .aae-progressbar__wrapper {
+      .aae-progressbar__container {
+        border: 8px solid $cf8f9;
+        .aae-progressbar__title {
+          font-size: 18px;
+          font-family: $source;
+        }
+        .aae-progressbar__parcent {
+          font-size: 20px;
+          color: $c9ea2;
+          font-family: $source;
+        }
+        svg {
+        }
+        .aae-progressbar-circle {
+          stroke: $c171f;
+        }
+      }
+    }
+  }
+}
