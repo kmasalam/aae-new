@@ -264,3 +264,60 @@ Testimonial
     }
   }
 }
+
+.aae-tabs {
+  .aae-tabs__wrapper {
+    .aae-tabs__container {
+      .aae-tabs__item-wrapper {
+        box-shadow: 0 0 18px rgba($c9ea2, 0.2);
+        background: $c4381;
+        .aae-tabs_item {
+          padding: 15px 60px;
+          font-size: 16px;
+          color: rgba($white, 0.6);
+        }
+      }
+      .aae-tabs__content-wrapper {
+        background: $cf8f9;
+      }
+    }
+  }
+  &.aae-is-vertical {
+    &.aae-is-item-top {
+      .aae-tabs__container {
+        align-items: flex-start;
+        .aae-tabs__item-wrapper {
+          @include flexDirection(column, center, center);
+          .aae-tabs_item {
+            &:not(:last-child) {
+              border-bottom: 1px solid rgba($white, 0.1);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.aae-is-demo1 {
+    .aae-tabs__wrapper {
+      .aae-tabs__container {
+        .aae-tabs__item-wrapper {
+          background: #1cc6ff;
+          background: -moz-linear-gradient(-45deg, #1cc6ff 0%, #21f7f4 100%);
+          background: -webkit-linear-gradient(-45deg, #1cc6ff 0%, #21f7f4 100%);
+          background: linear-gradient(135deg, #1cc6ff 0%, #21f7f4 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cc6ff', endColorstr='#21f7f4',GradientType=1 );
+          .aae-tabs_item {
+            &.active {
+              background: $white;
+              color: $cffdc;
+            }
+          }
+        }
+      }
+      .aae-tabs__content-wrapper {
+        background: $white;
+        border: 1px solid $cc8c8;
+      }
+    }
+  }
+}

@@ -148,3 +148,38 @@ Testimonial
       font-family: "Source Sans Pro", sans-serif; }
     .aae-progressbar.aae-is-progressbar-circle .aae-progressbar__wrapper .aae-progressbar__container .aae-progressbar-circle {
       stroke: #171f3e; }
+
+.aae-tabs .aae-tabs__wrapper .aae-tabs__container .aae-tabs__item-wrapper {
+  box-shadow: 0 0 18px rgba(158, 162, 177, 0.2);
+  background: #4381fd; }
+  .aae-tabs .aae-tabs__wrapper .aae-tabs__container .aae-tabs__item-wrapper .aae-tabs_item {
+    padding: 15px 60px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6); }
+
+.aae-tabs .aae-tabs__wrapper .aae-tabs__container .aae-tabs__content-wrapper {
+  background: #f8f9fd; }
+
+.aae-tabs.aae-is-vertical.aae-is-item-top .aae-tabs__container {
+  align-items: flex-start; }
+  .aae-tabs.aae-is-vertical.aae-is-item-top .aae-tabs__container .aae-tabs__item-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column; }
+    .aae-tabs.aae-is-vertical.aae-is-item-top .aae-tabs__container .aae-tabs__item-wrapper .aae-tabs_item:not(:last-child) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.aae-tabs.aae-is-demo1 .aae-tabs__wrapper .aae-tabs__container .aae-tabs__item-wrapper {
+  background: #1cc6ff;
+  background: -moz-linear-gradient(-45deg, #1cc6ff 0%, #21f7f4 100%);
+  background: -webkit-linear-gradient(-45deg, #1cc6ff 0%, #21f7f4 100%);
+  background: linear-gradient(135deg, #1cc6ff 0%, #21f7f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cc6ff', endColorstr='#21f7f4',GradientType=1 ); }
+  .aae-tabs.aae-is-demo1 .aae-tabs__wrapper .aae-tabs__container .aae-tabs__item-wrapper .aae-tabs_item.active {
+    background: #ffffff;
+    color: #ffdc2c; }
+
+.aae-tabs.aae-is-demo1 .aae-tabs__wrapper .aae-tabs__content-wrapper {
+  background: #ffffff;
+  border: 1px solid #c8c8c8; }
