@@ -14,6 +14,8 @@
     flex-flow: $flow;
   } @else if $flow == "row" {
     flex-flow: $flow;
+  } @else if $flow == "column-reverse" {
+    flex-flow: $flow;
   } @else {
     flex-flow: row-reverse;
   }

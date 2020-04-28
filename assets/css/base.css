@@ -71,34 +71,159 @@
 
 /*-----------------------------------
 -----------------------------------*/
-.aae-accordion__item_content {
-  display: none; }
-
-.advanced_blocks_accordion.type-1 .showed {
-  display: none; }
-
-.aae-accordion {
-  font-family: "Source Sans Pro", sans-serif; }
-  .aae-accordion .aae-accordion__wrapper .aae-accordion__container .aae-accordion__item {
-    border: 1px solid #c8c8c8;
-    margin-bottom: -1px; }
-    .aae-accordion .aae-accordion__wrapper .aae-accordion__container .aae-accordion__item .aae-accordion__item_title {
-      cursor: pointer;
-      padding: 7px 15px; }
-      .aae-accordion .aae-accordion__wrapper .aae-accordion__container .aae-accordion__item .aae-accordion__item_title__content {
-        margin-bottom: 0;
-        line-height: 40px;
-        font-size: 18px;
-        font-weight: 400;
-        color: #707070; }
-    .aae-accordion .aae-accordion__wrapper .aae-accordion__container .aae-accordion__item_content {
-      padding: 7px 15px;
+.aae-countdown .aae-countdown__wrapper .aae-countdown__container {
+  border: 1px solid #c8c8c8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row;
+  padding: 15px 15px 15px 15px; }
+  .aae-countdown .aae-countdown__wrapper .aae-countdown__container > span:not(:last-child) {
+    border-right: 1px solid #c8c8c8; }
+  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__days {
+    text-align: center;
+    font-size: 35px;
+    color: #171f3e;
+    font-weight: 600;
+    position: relative;
+    line-height: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 150px;
+    width: 150px; }
+    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__days > span {
+      display: block;
       font-size: 16px;
-      color: #666666; }
-      .aae-accordion .aae-accordion__wrapper .aae-accordion__container .aae-accordion__item_content p {
-        margin-bottom: 0; }
-    .aae-accordion .aae-accordion__wrapper .aae-accordion__container .aae-accordion__item.show .aae-accordion__item_title {
-      border-bottom: 1px solid #c8c8c8; }
+      color: #9ea2b1;
+      font-weight: 400;
+      text-transform: capitalize;
+      display: inline-block;
+      margin-left: 10px; }
+  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__hours {
+    text-align: center;
+    font-size: 35px;
+    color: #171f3e;
+    font-weight: 600;
+    position: relative;
+    line-height: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 150px;
+    width: 150px; }
+    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__hours > span {
+      display: block;
+      font-size: 16px;
+      color: #9ea2b1;
+      font-weight: 400;
+      text-transform: capitalize;
+      display: inline-block;
+      margin-left: 10px; }
+  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__minutes {
+    text-align: center;
+    font-size: 35px;
+    color: #171f3e;
+    font-weight: 600;
+    position: relative;
+    line-height: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 150px;
+    width: 150px; }
+    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__minutes > span {
+      display: block;
+      font-size: 16px;
+      color: #9ea2b1;
+      font-weight: 400;
+      text-transform: capitalize;
+      display: inline-block;
+      margin-left: 10px; }
+  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__seconds {
+    text-align: center;
+    font-size: 35px;
+    color: #171f3e;
+    font-weight: 600;
+    position: relative;
+    line-height: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 150px;
+    width: 150px; }
+    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__seconds > span {
+      display: block;
+      font-size: 16px;
+      color: #9ea2b1;
+      font-weight: 400;
+      text-transform: capitalize;
+      display: inline-block;
+      margin-left: 10px; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__minutes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__minutes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__minutes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse; }
 
 /*-----------------------------------
 -----------------------------------*/
