@@ -1,0 +1,73 @@
+@import "foundation/variables";
+@import "foundation/mixins";
+
+$list: days, hours, minutes, seconds;
+.aae-countdown {
+    .aae-countdown__wrapper {
+        .aae-countdown__container {
+            border: 1px solid $cc8c8;
+            @include flexDirection(row, center, space-evenly);
+            padding: 15px 15px 15px 15px;
+            > span {
+                &:not(:last-child) {
+                    border-right: 1px solid $cc8c8;
+                }
+            }
+            @each $list in $list {
+                .aae-countdown__#{$list} {
+                    text-align: center;
+                    font-size: 35px;
+                    color: $c171f;
+                    font-weight: $semibold;
+                    position: relative;
+                    line-height: 35px;
+                    font-family: $source;
+                    height: 150px;
+                    width: 150px;
+                    > span {
+                        display: block;
+                        font-size: 16px;
+                        color: $c9ea2;
+                        font-weight: $regular;
+                        text-transform: capitalize;
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &.aae-label-right {
+        .aae-countdown__container {
+            @each $list in $list {
+                .aae-countdown__#{$list} {
+                    @include flexDirection(row, center, center);
+                    > span {
+                    }
+                }
+            }
+        }
+    }
+    &.aae-label-left {
+        .aae-countdown__container {
+            @each $list in $list {
+                .aae-countdown__#{$list} {
+                    @include flexDirection(row-reverse, center, center);
+                    > span {
+                    }
+                }
+            }
+        }
+    }
+    &.aae-label-top {
+        .aae-countdown__container {
+            @each $list in $list {
+                .aae-countdown__#{$list} {
+                    @include flexDirection(column-reverse, center, center);
+                    > span {
+                    }
+                }
+            }
+        }
+    }
+}

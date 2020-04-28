@@ -1,0 +1,153 @@
+.aae-countdown .aae-countdown__wrapper .aae-countdown__container {
+  border: 1px solid #c8c8c8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row;
+  padding: 15px 15px 15px 15px; }
+  .aae-countdown .aae-countdown__wrapper .aae-countdown__container > span:not(:last-child) {
+    border-right: 1px solid #c8c8c8; }
+  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__days {
+    text-align: center;
+    font-size: 35px;
+    color: #171f3e;
+    font-weight: 600;
+    position: relative;
+    line-height: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 150px;
+    width: 150px; }
+    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__days > span {
+      display: block;
+      font-size: 16px;
+      color: #9ea2b1;
+      font-weight: 400;
+      text-transform: capitalize;
+      display: inline-block;
+      margin-left: 10px; }
+  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__hours {
+    text-align: center;
+    font-size: 35px;
+    color: #171f3e;
+    font-weight: 600;
+    position: relative;
+    line-height: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 150px;
+    width: 150px; }
+    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__hours > span {
+      display: block;
+      font-size: 16px;
+      color: #9ea2b1;
+      font-weight: 400;
+      text-transform: capitalize;
+      display: inline-block;
+      margin-left: 10px; }
+  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__minutes {
+    text-align: center;
+    font-size: 35px;
+    color: #171f3e;
+    font-weight: 600;
+    position: relative;
+    line-height: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 150px;
+    width: 150px; }
+    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__minutes > span {
+      display: block;
+      font-size: 16px;
+      color: #9ea2b1;
+      font-weight: 400;
+      text-transform: capitalize;
+      display: inline-block;
+      margin-left: 10px; }
+  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__seconds {
+    text-align: center;
+    font-size: 35px;
+    color: #171f3e;
+    font-weight: 600;
+    position: relative;
+    line-height: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 150px;
+    width: 150px; }
+    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__seconds > span {
+      display: block;
+      font-size: 16px;
+      color: #9ea2b1;
+      font-weight: 400;
+      text-transform: capitalize;
+      display: inline-block;
+      margin-left: 10px; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__minutes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__minutes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__minutes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse; }
