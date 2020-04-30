@@ -1,0 +1,51 @@
+.aae-button .aae-button__wrapper .aae-button__container .aae_btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  display: inline-flex; }
+
+.aae-button.aae-button-medium .aae-button__wrapper .aae-button__container .aae_btn {
+  padding: 10px 35px; }
+
+.aae-button.aae-button-large .aae-button__wrapper .aae-button__container .aae_btn {
+  padding: 15px 40px;
+  font-weight: 500; }
+
+.aae-button.aae-solid-button .aae_btn {
+  background: #2f2f2f;
+  color: #ffffff;
+  border: 1px solid #2f2f2f; }
+
+.aae-button.aae-bordered-button .aae_btn {
+  background: #ffffff;
+  color: #2f2f2f;
+  border: 1px solid #2f2f2f; }
+
+.aae-button.aae-button-exlarge .aae-button__wrapper .aae-button__container .aae_btn {
+  padding: 20px 50px;
+  font-weight: 500; }
+
+.aae-button.aae-button-full-width .aae-button__wrapper .aae-button__container .aae_btn {
+  padding: 15px 50px;
+  font-weight: 500;
+  width: 100%; }
+
+.aae-button.aae-capsul-button .aae-button__wrapper .aae-button__container .aae_btn {
+  border-radius: 30px; }
+
+.aae-button.aae-icon-left .aae-button__wrapper .aae-button__container .aae_btn .aae-button-icon {
+  display: inline-block;
+  margin-right: 5px; }
+
+.aae-button.aae-icon-right .aae-button__wrapper .aae-button__container .aae_btn .aae-button-icon {
+  display: inline-block;
+  margin-left: 5px; }
+
+.aae-button.aae-has-btn-shadow .aae-button__wrapper .aae-button__container .aae_btn {
+  box-shadow: 0px 0px 40px rgba(67, 129, 253, 0.3); }
+
+.aae-button.aae-demo-style1 .aae-button__wrapper .aae-button__container .aae_btn {
+  background: #4381fd;
+  border-color: #4381fd; }

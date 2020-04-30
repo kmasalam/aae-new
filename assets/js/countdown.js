@@ -3,5 +3,8 @@
   "use strict";
 
   // Kounty Plugin
-  $(".aae-countdown__container").kounty();
+  var pluginCheck = $(".aae-countdown__container");
+  if (pluginCheck.length) {
+    pluginCheck.kounty();
+  }
 })(jQuery);

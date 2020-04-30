@@ -1,153 +1,134 @@
-.aae-countdown .aae-countdown__wrapper .aae-countdown__container {
-  border: 1px solid #c8c8c8;
+.aae-countdown.aae-countdown-full-boxed .aae-countdown__container {
+  border: 1px solid #9ea2b1;
+  border-radius: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: "initial";
+  flex-flow: row; }
+  .aae-countdown.aae-countdown-full-boxed .aae-countdown__container .aae-countdown__days, .aae-countdown.aae-countdown-full-boxed .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-full-boxed .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-full-boxed .aae-countdown__container .aae-countdown__seconds {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    font-size: 35px;
+    color: #171f3e;
+    font-weight: 600;
+    position: relative;
+    line-height: 35px;
+    padding: 35px 0;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__days, .aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__label {
+  margin-left: 10px; }
+
+.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__seperator {
+  right: 0; }
+
+.aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__seconds .aae-countdown__seperator {
+  display: none; }
+
+.aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__seperator {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%; }
+
+.aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__label {
+  font-size: 16px;
+  color: #9ea2b1;
+  font-weight: 400;
+  text-transform: capitalize; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__days, .aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__label {
+  margin-left: 0px;
+  margin-right: 10px; }
+
+.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__seperator {
+  right: 0; }
+
+.aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__days, .aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column; }
+
+.aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__label {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__seperator {
+  right: 0; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__days, .aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__label {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__seperator {
+  right: 0; }
+
+.aae-countdown.aae-countdown-grad .aae-countdown__container {
+  background: #9536ff;
+  background: -moz-linear-gradient(-45deg, #9536ff 0%, #ff747e 100%);
+  background: -webkit-linear-gradient(-45deg, #9536ff 0%, #ff747e 100%);
+  background: linear-gradient(135deg, #9536ff 0%, #ff747e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9536ff', endColorstr='#ff747e',GradientType=1 );
+  border: none; }
+  .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__days, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-full-boxed .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-full-boxed .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-full-boxed .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-full-boxed .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-full-boxed .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-full-boxed .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-label-right .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-right .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-right .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-label-left .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-left .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-left .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-label-bottom .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-bottom .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-bottom .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-label-top .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-top .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-top .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-blocked .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-blocked .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-blocked .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-has-countdown-shadow .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-grad .aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-has-countdown-shadow .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-has-countdown-shadow .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds {
+    color: #ffd850; }
+  .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-full-boxed .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-full-boxed .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-full-boxed .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-full-boxed .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-right .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-right .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-left .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-left .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-bottom .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-bottom .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-label-top .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-top .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-blocked .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-blocked .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-has-countdown-shadow .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-has-countdown-shadow .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds {
+    color: #ffd850; }
+  .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-full-boxed .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-full-boxed .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-right .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-left .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-bottom .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-bottom .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-label-top .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-blocked .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-countdown-grad .aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__seconds, .aae-countdown.aae-has-countdown-shadow .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds {
+    color: #ffd850; }
+  .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seconds {
+    color: #ffd850; }
+  .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__label {
+    color: #ffffff; }
+  .aae-countdown.aae-countdown-grad .aae-countdown__container .aae-countdown__seperator {
+    color: #ffffff; }
+
+.aae-countdown.aae-countdown-blocked .aae-countdown__container {
+  background: transparent;
+  display: flex;
   flex-flow: row;
-  padding: 15px 15px 15px 15px; }
-  .aae-countdown .aae-countdown__wrapper .aae-countdown__container > span:not(:last-child) {
-    border-right: 1px solid #c8c8c8; }
-  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__days {
-    text-align: center;
-    font-size: 35px;
-    color: #171f3e;
-    font-weight: 600;
-    position: relative;
-    line-height: 35px;
-    font-family: "Source Sans Pro", sans-serif;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__days, .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__seconds {
+    flex: 0 0 150px;
+    max-width: 0 0 150px;
+    border-radius: 0;
     height: 150px;
-    width: 150px; }
-    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__days > span {
-      display: block;
-      font-size: 16px;
-      color: #9ea2b1;
-      font-weight: 400;
-      text-transform: capitalize;
-      display: inline-block;
-      margin-left: 10px; }
-  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__hours {
-    text-align: center;
-    font-size: 35px;
-    color: #171f3e;
-    font-weight: 600;
-    position: relative;
-    line-height: 35px;
-    font-family: "Source Sans Pro", sans-serif;
-    height: 150px;
-    width: 150px; }
-    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__hours > span {
-      display: block;
-      font-size: 16px;
-      color: #9ea2b1;
-      font-weight: 400;
-      text-transform: capitalize;
-      display: inline-block;
-      margin-left: 10px; }
-  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__minutes {
-    text-align: center;
-    font-size: 35px;
-    color: #171f3e;
-    font-weight: 600;
-    position: relative;
-    line-height: 35px;
-    font-family: "Source Sans Pro", sans-serif;
-    height: 150px;
-    width: 150px; }
-    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__minutes > span {
-      display: block;
-      font-size: 16px;
-      color: #9ea2b1;
-      font-weight: 400;
-      text-transform: capitalize;
-      display: inline-block;
-      margin-left: 10px; }
-  .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__seconds {
-    text-align: center;
-    font-size: 35px;
-    color: #171f3e;
-    font-weight: 600;
-    position: relative;
-    line-height: 35px;
-    font-family: "Source Sans Pro", sans-serif;
-    height: 150px;
-    width: 150px; }
-    .aae-countdown .aae-countdown__wrapper .aae-countdown__container .aae-countdown__seconds > span {
-      display: block;
-      font-size: 16px;
-      color: #9ea2b1;
-      font-weight: 400;
-      text-transform: capitalize;
-      display: inline-block;
-      margin-left: 10px; }
+    margin-right: 20px; }
+  .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__seconds {
+    margin-right: 0; }
+  .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__label {
+    margin-left: 0px;
+    margin-right: 0px; }
+  .aae-countdown.aae-countdown-blocked .aae-countdown__container .aae-countdown__seperator {
+    right: 0; }
 
-.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__days {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row; }
+.aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__days, .aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__hours, .aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__minutes, .aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__seconds {
+  font-size: 36px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(23, 31, 62, 0.2);
+  font-weight: 600; }
 
-.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__hours {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row; }
-
-.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__minutes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row; }
-
-.aae-countdown.aae-label-right .aae-countdown__container .aae-countdown__seconds {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row; }
-
-.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__days {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row-reverse; }
-
-.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__hours {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row-reverse; }
-
-.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__minutes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row-reverse; }
-
-.aae-countdown.aae-label-left .aae-countdown__container .aae-countdown__seconds {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row-reverse; }
-
-.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__days {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column-reverse; }
-
-.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__hours {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column-reverse; }
-
-.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__minutes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column-reverse; }
-
-.aae-countdown.aae-label-top .aae-countdown__container .aae-countdown__seconds {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column-reverse; }
+.aae-countdown.aae-has-countdown-shadow .aae-countdown__container .aae-countdown__label {
+  color: #99566e;
+  font-weight: 600; }

@@ -1,0 +1,138 @@
+@import "foundation/variables";
+@import "foundation/mixins";
+
+.aae-dual-button {
+    font-family: $source;
+    .aae-dual-button__wrapper {
+        .aae-dual-button__container {
+            position: relative;
+            .aae-dual-btn {
+                padding: 15px 35px;
+                font-size: 16px;
+                position: relative;
+                display: inline-flex;
+            }
+            .aae-dual-btn-left {
+                margin-right: -3px;
+            }
+            .aae-dual-btn-right {
+            }
+        }
+    }
+    &.aae-dual-button-default {
+        .aae-dual-button__wrapper {
+            .aae-dual-button__container {
+                .aae-dual-btn {
+                }
+                .aae-dual-btn-left {
+                    background: $c2222;
+                    border: 1px solid $c2222;
+                    color: $white;
+                }
+                .aae-dual-btn-right {
+                    border: 1px solid $c2222;
+                    color: $c2222;
+                }
+            }
+        }
+    }
+    &.aae-has-button-seperator {
+        .aae-dual-button__wrapper {
+            .aae-dual-button__container {
+                .aae-dual-btn-seperator {
+                    position: absolute;
+                    height: 30px;
+                    width: 30px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: $c2222;
+                    color: #ffffff;
+                    border: 1px solid $white;
+                    left: 100%;
+                    transform: translate(-50%, -50%);
+                    top: 50%;
+                    z-index: 50;
+                }
+            }
+        }
+    }
+    &.aae-has-no-button-seperator {
+        .aae-dual-button__wrapper {
+            .aae-dual-button__container {
+                .aae-dual-btn-seperator {
+                    display: none;
+                }
+            }
+        }
+    }
+    &.aae-dual-button-capcul {
+        .aae-dual-button__wrapper {
+            .aae-dual-button__container {
+                .aae-dual-btn-left {
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    .aae-dual-btn-seperator {
+                        @include radius(30px);
+                    }
+                }
+                .aae-dual-btn-right {
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                }
+            }
+        }
+    }
+    &.aae-dual-button-rounded {
+        .aae-dual-button__wrapper {
+            .aae-dual-button__container {
+                .aae-dual-btn-left {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    .aae-dual-btn-seperator {
+                        @include radius(30px);
+                        border-radius: 5px;
+                    }
+                }
+                .aae-dual-btn-right {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+        }
+    }
+    &.aae-has-btn-gap {
+        .aae-dual-button__wrapper {
+            .aae-dual-button__container {
+                .aae-dual-btn-left {
+                    margin-right: 30px;
+                    .aae-dual-btn-seperator {
+                        margin-left: 17px;
+                    }
+                }
+                .aae-dual-btn-right {
+                }
+            }
+        }
+    }
+    &.aae-solid-button {
+        .aae-dual-button__wrapper {
+            .aae-dual-button__container {
+                .aae-dual-btn {
+                }
+                .aae-dual-btn-left {
+                    background: $c5625;
+                    border: none;
+                    .aae-dual-btn-seperator {
+                        background: $c5625;
+                    }
+                }
+                .aae-dual-btn-right {
+                    background: $white;
+                    border: none;
+                    box-shadow: 0px 0px 30px rgba($c5625, 0.2);
+                }
+            }
+        }
+    }
+}

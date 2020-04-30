@@ -1,72 +1,239 @@
 @import "foundation/variables";
 @import "foundation/mixins";
 
-$list: days, hours, minutes, seconds;
+@mixin countlabel {
+    font-size: 16px;
+    color: $c9ea2;
+    font-weight: $regular;
+    text-transform: capitalize;
+}
 .aae-countdown {
-    .aae-countdown__wrapper {
+    &.aae-countdown-full-boxed {
         .aae-countdown__container {
-            border: 1px solid $cc8c8;
-            @include flexDirection(row, center, space-evenly);
-            padding: 15px 15px 15px 15px;
-            > span {
-                &:not(:last-child) {
-                    border-right: 1px solid $cc8c8;
-                }
+            border: 1px solid $c9ea2;
+            border-radius: 100px;
+            @include flexDirection(row, center, "initial");
+            .aae-countdown__days {
+                flex: 0 0 25%;
+                max-width: 25%;
+                text-align: center;
+                font-size: 35px;
+                color: $c171f;
+                font-weight: $semibold;
+                position: relative;
+                line-height: 35px;
+                padding: 35px 0;
+                font-family: $source;
+                text-align: center;
             }
-            @each $list in $list {
-                .aae-countdown__#{$list} {
-                    text-align: center;
-                    font-size: 35px;
-                    color: $c171f;
-                    font-weight: $semibold;
-                    position: relative;
-                    line-height: 35px;
-                    font-family: $source;
-                    height: 150px;
-                    width: 150px;
-                    > span {
-                        display: block;
-                        font-size: 16px;
-                        color: $c9ea2;
-                        font-weight: $regular;
-                        text-transform: capitalize;
-                        display: inline-block;
-                        margin-left: 10px;
-                    }
-                }
+            .aae-countdown__hours {
+                @extend .aae-countdown__days;
+            }
+            .aae-countdown__minutes {
+                @extend .aae-countdown__hours;
+            }
+            .aae-countdown__seconds {
+                @extend .aae-countdown__minutes;
             }
         }
     }
     &.aae-label-right {
         .aae-countdown__container {
-            @each $list in $list {
-                .aae-countdown__#{$list} {
-                    @include flexDirection(row, center, center);
-                    > span {
-                    }
+            .aae-countdown__days {
+                @include flexDirection(row, center, center);
+            }
+            .aae-countdown__hours {
+                @extend .aae-countdown__days;
+            }
+            .aae-countdown__minutes {
+                @extend .aae-countdown__hours;
+            }
+            .aae-countdown__seconds {
+                @extend .aae-countdown__minutes;
+            }
+            .aae-countdown__label {
+                margin-left: 10px;
+            }
+            .aae-countdown__seperator {
+                right: 0;
+            }
+        }
+    }
+    .aae-countdown__wrapper {
+        .aae-countdown__container {
+            .aae-countdown__days {
+            }
+            .aae-countdown__hours {
+            }
+            .aae-countdown__minutes {
+            }
+            .aae-countdown__seconds {
+                .aae-countdown__seperator {
+                    display: none;
                 }
+            }
+            .aae-countdown__seperator {
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+            }
+            .aae-countdown__label {
+                @include countlabel;
             }
         }
     }
     &.aae-label-left {
         .aae-countdown__container {
-            @each $list in $list {
-                .aae-countdown__#{$list} {
-                    @include flexDirection(row-reverse, center, center);
-                    > span {
-                    }
-                }
+            .aae-countdown__days {
+                @include flexDirection(row-reverse, center, center);
+            }
+            .aae-countdown__hours {
+                @extend .aae-countdown__days;
+            }
+            .aae-countdown__minutes {
+                @extend .aae-countdown__hours;
+            }
+            .aae-countdown__seconds {
+                @extend .aae-countdown__minutes;
+            }
+            .aae-countdown__label {
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+            .aae-countdown__seperator {
+                right: 0;
+            }
+        }
+    }
+    &.aae-label-bottom {
+        .aae-countdown__container {
+            .aae-countdown__days {
+                @include flexDirection(column, center, center);
+            }
+            .aae-countdown__hours {
+                @extend .aae-countdown__days;
+            }
+            .aae-countdown__minutes {
+                @extend .aae-countdown__hours;
+            }
+            .aae-countdown__seconds {
+                @extend .aae-countdown__minutes;
+            }
+            .aae-countdown__label {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .aae-countdown__seperator {
+                right: 0;
             }
         }
     }
     &.aae-label-top {
         .aae-countdown__container {
-            @each $list in $list {
-                .aae-countdown__#{$list} {
-                    @include flexDirection(column-reverse, center, center);
-                    > span {
-                    }
-                }
+            .aae-countdown__days {
+                @include flexDirection(column-reverse, center, center);
+            }
+            .aae-countdown__hours {
+                @extend .aae-countdown__days;
+            }
+            .aae-countdown__minutes {
+                @extend .aae-countdown__hours;
+            }
+            .aae-countdown__seconds {
+                @extend .aae-countdown__minutes;
+            }
+            .aae-countdown__label {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .aae-countdown__seperator {
+                right: 0;
+            }
+        }
+    }
+    &.aae-countdown-grad {
+        .aae-countdown__container {
+            background: #9536ff;
+            background: -moz-linear-gradient(-45deg, #9536ff 0%, #ff747e 100%);
+            background: -webkit-linear-gradient(-45deg, #9536ff 0%, #ff747e 100%);
+            background: linear-gradient(135deg, #9536ff 0%, #ff747e 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9536ff', endColorstr='#ff747e',GradientType=1 );
+            border: none;
+            .aae-countdown__days {
+                color: #ffd850;
+            }
+            .aae-countdown__hours {
+                color: #ffd850;
+            }
+            .aae-countdown__minutes {
+                color: #ffd850;
+            }
+            .aae-countdown__seconds {
+                color: #ffd850;
+            }
+            .aae-countdown__label {
+                color: $white;
+            }
+            .aae-countdown__seperator {
+                color: $white;
+            }
+        }
+    }
+    &.aae-countdown-blocked {
+        .aae-countdown__container {
+            background: transparent;
+            display: flex;
+            flex-flow: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            .aae-countdown__days {
+                flex: 0 0 150px;
+                max-width: 0 0 150px;
+                border-radius: 0;
+                height: 150px;
+                margin-right: 20px;
+            }
+            .aae-countdown__hours {
+                @extend .aae-countdown__days;
+            }
+            .aae-countdown__minutes {
+                @extend .aae-countdown__hours;
+            }
+            .aae-countdown__seconds {
+                @extend .aae-countdown__minutes;
+                margin-right: 0;
+            }
+            .aae-countdown__label {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .aae-countdown__seperator {
+                right: 0;
+            }
+        }
+    }
+    &.aae-has-countdown-shadow {
+        .aae-countdown__container {
+            .aae-countdown__days {
+                font-size: 36px;
+                border-radius: 50%;
+                box-shadow: 0 0 30px rgba($c171f, 0.2);
+                font-weight: $semibold;
+            }
+            .aae-countdown__hours {
+                @extend .aae-countdown__days;
+            }
+            .aae-countdown__minutes {
+                @extend .aae-countdown__hours;
+            }
+            .aae-countdown__seconds {
+                @extend .aae-countdown__minutes;
+            }
+            .aae-countdown__label {
+                color: $c9956;
+                font-weight: $semibold;
+            }
+            .aae-countdown__seperator {
             }
         }
     }
