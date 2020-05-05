@@ -7,9 +7,7 @@
   }
   @if $justify {
     justify-content: $justify;
-  } @else {
-    justify-content: center;
-  }
+  } 
   @if $flow == "column" {
     flex-flow: $flow;
   } @else if $flow == "row" {

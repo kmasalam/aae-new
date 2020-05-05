@@ -6,7 +6,9 @@
   box-sizing: border-box; }
   .aae-widget img {
     height: auto;
-    max-width: 100%; }
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none; }
   .aae-widget a {
     text-decoration: none; }
   .aae-widget *,
@@ -71,6 +73,255 @@
 
 /*-----------------------------------
 -----------------------------------*/
+.aae-pricing-table-demo-section-2 {
+  background: #3de0c3; }
+
+.aae-demo-section-padding-top {
+  padding-top: 100px; }
+
+.aae-demo-section-padding-bottom {
+  padding-bottom: 100px; }
+
+.aae-widget.aae-pricing-table {
+  padding: 50px 0; }
+  .aae-widget.aae-pricing-table .aae-pricing-table__head {
+    text-align: center; }
+    .aae-widget.aae-pricing-table .aae-pricing-table__head .aae-pricing-table__media i {
+      font-size: 36px;
+      color: #171f3e; }
+    .aae-widget.aae-pricing-table .aae-pricing-table__head .aae-pricing-table__title {
+      font-size: 22px;
+      color: #afafaf;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 20px; }
+  .aae-widget.aae-pricing-table .aae-pricing-table__price_tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row; }
+    .aae-widget.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__original_price_currency, .aae-widget.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__original_price_text, .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__original_price_text, .aae-widget.aae-pricing-table .aae-pricing-table__price_tag .aae-widget.aae-pricing-style-1.aae-has-offer .aae-pricing-table__price .aae-pricing-table__original_price_text, .aae-widget.aae-pricing-style-1.aae-has-offer .aae-pricing-table__price .aae-widget.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__original_price_text, .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__original_price_text, .aae-widget.aae-pricing-table .aae-pricing-table__price_tag .aae-widget.aae-pricing-style-2.aae-has-offer .aae-pricing-table__price .aae-pricing-table__original_price_text, .aae-widget.aae-pricing-style-2.aae-has-offer .aae-pricing-table__price .aae-widget.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__original_price_text {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px; }
+    .aae-widget.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__offer_price_currency, .aae-widget.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__offer_price_text, .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__offer_price_text, .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__offer_price_text {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px; }
+  .aae-widget.aae-pricing-table .aae-pricing-table__price_duration {
+    font-size: 14px; }
+  .aae-widget.aae-pricing-table .aae-pricing-table__body {
+    padding-top: 40px; }
+    .aae-widget.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list {
+      list-style: none; }
+      .aae-widget.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li {
+        margin-bottom: 0; }
+        .aae-widget.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li .aae-pricing-table__features_list__icon {
+          font-size: 16px;
+          display: inline-block;
+          padding-right: 5px; }
+        .aae-widget.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li .aae-pricing-table__features_list__text {
+          font-size: 16px; }
+        .aae-widget.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li:not(:last-child) {
+          margin-bottom: 20px; }
+  .aae-widget.aae-pricing-table .aae-pricing-table__footer {
+    text-align: center;
+    padding-top: 30px; }
+    .aae-widget.aae-pricing-table .aae-pricing-table__footer .aae-pricing-table__button {
+      text-transform: uppercase;
+      padding: 12px 42px;
+      transition: all 0.3s linear; }
+      .aae-widget.aae-pricing-table .aae-pricing-table__footer .aae-pricing-table__button:hover {
+        background: #2f2f2f;
+        color: #ffffff; }
+
+.aae-widget.aae-pricing-style-1 {
+  font-family: "Source Sans Pro", sans-serif; }
+  .aae-widget.aae-pricing-style-1.aae-pricing-table {
+    background: #fafafa;
+    padding: 50px 0;
+    box-shadow: 0 15px 30px rgba(114, 114, 114, 0.2); }
+    .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__head {
+      text-align: center; }
+      .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__head .aae-pricing-table__media {
+        margin-bottom: 20px; }
+        .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__head .aae-pricing-table__media i {
+          font-size: 36px;
+          color: #171f3e; }
+      .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__head .aae-pricing-table__title {
+        font-size: 22px;
+        color: #afafaf;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 20px; }
+    .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__price_tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row; }
+      .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__original_price_currency, .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__original_price_text {
+        color: #2f2f2f;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px; }
+      .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__offer_price_currency, .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__offer_price_text {
+        color: #2f2f2f;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px; }
+    .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__price_duration {
+      font-size: 14px;
+      color: #878787; }
+    .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__body {
+      padding-top: 40px; }
+      .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list {
+        list-style: none; }
+        .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: row;
+          margin-bottom: 0; }
+          .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li .aae-pricing-table__features_list__icon {
+            font-size: 16px;
+            color: #707070;
+            display: inline-block;
+            padding-right: 5px; }
+          .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li .aae-pricing-table__features_list__text {
+            font-size: 16px;
+            color: #707070; }
+          .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li:not(:last-child) {
+            margin-bottom: 20px; }
+    .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__footer {
+      text-align: center;
+      padding-top: 30px; }
+      .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__footer .aae-pricing-table__button {
+        border: 1px solid #2f2f2f;
+        color: #878787;
+        text-transform: uppercase;
+        padding: 12px 42px;
+        transition: all 0.3s linear; }
+        .aae-widget.aae-pricing-style-1.aae-pricing-table .aae-pricing-table__footer .aae-pricing-table__button:hover {
+          background: #2f2f2f;
+          color: #ffffff; }
+  .aae-widget.aae-pricing-style-1.aae-has-offer .aae-pricing-table__price .aae-pricing-table__original_price {
+    display: inline-block;
+    padding-right: 15px; }
+    .aae-widget.aae-pricing-style-1.aae-has-offer .aae-pricing-table__price .aae-pricing-table__original_price_currency, .aae-widget.aae-pricing-style-1.aae-has-offer .aae-pricing-table__price .aae-pricing-table__original_price_text {
+      font-size: 25px; }
+  .aae-widget.aae-pricing-style-1.aae-has-offer .aae-pricing-table__price .aae-pricing-table__original_price {
+    text-decoration: line-through;
+    text-decoration-color: #2f2f2f; }
+  .aae-widget.aae-pricing-style-1.aae-pricing-media-top {
+    padding-top: 0; }
+
+.aae-widget.aae-pricing-style-2.aae-pricing-table {
+  background: #fafafa;
+  padding: 0px 0;
+  box-shadow: 0 15px 30px rgba(114, 114, 114, 0.2); }
+  .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__head {
+    text-align: center; }
+    .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__head .aae-pricing-table__media i {
+      font-size: 36px;
+      color: #171f3e; }
+    .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__head .aae-pricing-table__title {
+      font-size: 22px;
+      color: #2f2f2f;
+      text-transform: capitalize;
+      font-weight: 600;
+      margin-bottom: 0px;
+      padding: 20px 0 20px 0; }
+  .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__price {
+    text-align: center;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 35px 0 35px 0; }
+    .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__price_tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row; }
+      .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__original_price_currency, .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__original_price_text {
+        color: #3de0c3;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px; }
+      .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__offer_price_currency, .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__price_tag .aae-pricing-table__offer_price_text {
+        color: #3de0c3;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px; }
+    .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__price_duration {
+      font-size: 14px;
+      color: #878787; }
+  .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__body {
+    padding: 0 35px 0 35px; }
+    .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list {
+      list-style: none;
+      margin: 0; }
+      .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li {
+        margin-bottom: 0;
+        padding: 20px 0; }
+        .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li .aae-pricing-table__features_list__icon {
+          font-size: 16px;
+          color: #707070;
+          display: inline-block;
+          padding-right: 5px; }
+        .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li .aae-pricing-table__features_list__text {
+          font-size: 16px;
+          color: #707070; }
+        .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__body .aae-pricing-table__features_list li:not(:last-child) {
+          border-bottom: 1px solid #e8e8e8; }
+  .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__footer {
+    text-align: center;
+    padding-top: 30px; }
+    .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__footer .aae-pricing-table__button {
+      color: #878787;
+      text-transform: uppercase;
+      padding: 12px 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s linear;
+      background: #f3f3f3; }
+      .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__footer .aae-pricing-table__button i {
+        display: inline-block;
+        padding-right: 5px; }
+      .aae-widget.aae-pricing-style-2.aae-pricing-table .aae-pricing-table__footer .aae-pricing-table__button:hover {
+        background: #3de0c3;
+        color: #ffffff; }
+
+.aae-widget.aae-pricing-style-2.aae-has-offer .aae-pricing-table__price .aae-pricing-table__original_price {
+  display: inline-block;
+  padding-right: 15px; }
+  .aae-widget.aae-pricing-style-2.aae-has-offer .aae-pricing-table__price .aae-pricing-table__original_price_currency, .aae-widget.aae-pricing-style-2.aae-has-offer .aae-pricing-table__price .aae-pricing-table__original_price_text {
+    font-size: 25px; }
+
+.aae-widget.aae-pricing-style-2.aae-has-offer .aae-pricing-table__price .aae-pricing-table__original_price {
+  text-decoration: line-through;
+  text-decoration-color: #3de0c3; }
+
+.aae-widget.aae-is-pricing-footer .aae-pricing-table__head .aae-pricing-table__media {
+  margin-bottom: 0; }
+
+.aae-widget.aae-is-features-right .aae-pricing-table__features_list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row-reverse; }
+
+.aae-widget.aae-is-features-bottom .aae-pricing-table__features_list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column-reverse; }
+
+.aae-widget.aae-is-features-left .aae-pricing-table__features_list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row; }
+
 /*-----------------------------------
 -----------------------------------*/
 /*-----------------------------------
